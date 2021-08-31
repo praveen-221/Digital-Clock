@@ -17,7 +17,12 @@ window.onload = function () {
         apm.innerHTML = "PM";
     }
     if (hh > 12) {
-        hh = "0" + (hh -12);
+        if (hh < 22) {
+            hh = "0" + (hh -12);
+        }
+        else {
+            hh = (hh - 12);
+        }
     }
     if (mm >= 0 && mm <= 9) {
         mm = "0" + mm;
